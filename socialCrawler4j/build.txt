@@ -1,0 +1,61 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[ERROR] FATAL ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Error building POM (may not be this project's POM).
+
+
+Project ID: com.socialmetrics:social-crawler
+POM Location: C:\Suparna\SuparnaWorkspace\SocialCrawler\socialCrawler4j\social-crawler\pom.xml
+Validation Messages:
+
+    [0]  'dependencies.dependency.version' is missing for commons-codec:commons-codec:jar
+    [1]  'dependencies.dependency.version' is missing for oauth.signpost:signpost-core:jar
+    [2]  'dependencies.dependency.version' is missing for org.springframework:spring-beans:jar
+    [3]  'dependencies.dependency.version' is missing for org.springframework:spring-orm:jar
+    [4]  'dependencies.dependency.version' is missing for org.springframework:spring-core:jar
+    [5]  'dependencies.dependency.version' is missing for org.springframework:spring-context:jar
+    [6]  'dependencies.dependency.version' is missing for org.springframework:spring-aop:jar
+    [7]  'dependencies.dependency.version' is missing for org.springframework:spring-tx:jar
+    [8]  'dependencies.dependency.version' is missing for org.springframework:spring-test:jar
+    [9]  'dependencies.dependency.version' is missing for org.slf4j:slf4j-api:jar
+    [10]  'dependencies.dependency.version' is missing for org.slf4j:slf4j-simple:jar
+    [11]  'dependencies.dependency.version' is missing for javassist:javassist:jar
+    [12]  'dependencies.dependency.version' is missing for cglib:cglib:jar
+    [13]  'dependencies.dependency.version' is missing for cglib:cglib-nodep:jar
+
+
+Reason: Failed to validate POM for project com.socialmetrics:social-crawler at C:\Suparna\SuparnaWorkspace\SocialCrawler\socialCrawler4j\social-crawler\pom.xml
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Trace
+org.apache.maven.reactor.MavenExecutionException: Failed to validate POM for project com.socialmetrics:social-crawler at C:\Suparna\SuparnaWorkspace\SocialCrawler\socialCrawler4j\social-crawler\pom.xml
+	at org.apache.maven.DefaultMaven.getProjects(DefaultMaven.java:404)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:272)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:138)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:362)
+	at org.apache.maven.cli.compat.CompatibleMain.main(CompatibleMain.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.classworlds.Launcher.launchEnhanced(Launcher.java:315)
+	at org.codehaus.classworlds.Launcher.launch(Launcher.java:255)
+	at org.codehaus.classworlds.Launcher.mainWithExitCode(Launcher.java:430)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:375)
+Caused by: org.apache.maven.project.InvalidProjectModelException: Failed to validate POM for project com.socialmetrics:social-crawler at C:\Suparna\SuparnaWorkspace\SocialCrawler\socialCrawler4j\social-crawler\pom.xml
+	at org.apache.maven.project.DefaultMavenProjectBuilder.processProjectLogic(DefaultMavenProjectBuilder.java:1077)
+	at org.apache.maven.project.DefaultMavenProjectBuilder.buildInternal(DefaultMavenProjectBuilder.java:880)
+	at org.apache.maven.project.DefaultMavenProjectBuilder.buildFromSourceFileInternal(DefaultMavenProjectBuilder.java:508)
+	at org.apache.maven.project.DefaultMavenProjectBuilder.build(DefaultMavenProjectBuilder.java:200)
+	at org.apache.maven.DefaultMaven.getProject(DefaultMaven.java:604)
+	at org.apache.maven.DefaultMaven.collectProjects(DefaultMaven.java:487)
+	at org.apache.maven.DefaultMaven.collectProjects(DefaultMaven.java:560)
+	at org.apache.maven.DefaultMaven.getProjects(DefaultMaven.java:391)
+	... 12 more
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: < 1 second
+[INFO] Finished at: Wed Feb 08 10:42:49 PST 2012
+[INFO] Final Memory: 4M/490M
+[INFO] ------------------------------------------------------------------------
